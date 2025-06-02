@@ -31,8 +31,8 @@ public class LoginActivity extends AppCompatActivity {
             if (email.isEmpty() || username.isEmpty() || password.isEmpty()) {
                 Toast.makeText(LoginActivity.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
             } else {
-                // Validate credentials (for now hardcoding this part)
-                if (username.equals("admin") && password.equals("1234")) {
+
+                if (email.equals("Random@gmail.com") && username.equals("admin") && password.equals("1234")) {
                     Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
                 } else {
