@@ -41,6 +41,11 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.CreateAccount).setOnClickListener(v -> {
+            Intent CreateAccount = new Intent(LoginActivity.this, RegisterActivity.class);
+            startActivity(CreateAccount);
+        });
+
         findViewById(R.id.forgotPassword).setOnClickListener(v -> {
             Intent resetPasswordIntent = new Intent(LoginActivity.this, ResetPasswordActivity.class);
             startActivity(resetPasswordIntent);

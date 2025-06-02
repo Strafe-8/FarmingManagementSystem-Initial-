@@ -44,11 +44,20 @@
         android:layout_gravity="center" />
 
     <TextView
+        android:id="@+id/CreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an Account"
+        android:textColor="#0000FF"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
         android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forgot Password?"
         android:textColor="#FF0000"
         android:layout_gravity="center"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="5dp"/>
 </LinearLayout>
