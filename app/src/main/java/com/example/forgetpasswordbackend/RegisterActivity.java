@@ -26,7 +26,6 @@ public class RegisterActivity extends AppCompatActivity {
         countrySpinner = findViewById(R.id.countrySpinner);
         registerButton = findViewById(R.id.registerButton);
 
-        // Populate the spinner with countries
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.countries_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -41,9 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
             if (email.isEmpty() || username.isEmpty() || password.isEmpty()) {
                 Toast.makeText(RegisterActivity.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
             } else {
-                // Registration logic
                 Toast.makeText(RegisterActivity.this, "Registration Successful", Toast.LENGTH_SHORT).show();
-                // Proceed to next activity
             }
         });
     }
